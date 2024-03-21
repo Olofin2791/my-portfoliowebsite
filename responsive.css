@@ -1,0 +1,11 @@
+@media (max-width: 1150px) {
+  .nav-link {
+    padding: 4rem;
+  }
+}
+
+@media (max-width: 905px) {
+  .btn {
+    display: block;
+  }
+}

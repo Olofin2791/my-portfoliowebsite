@@ -1,0 +1,542 @@
+* {
+  padding: 2px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: white;
+  /* max-width: 100%; */
+}
+
+.nav-link {
+  color: rgb(233, 20, 109);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  animation: movedown 1s linear 1;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes movedown {
+  0% {
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.nav-link :hover {
+  color: white;
+  background-color: rgb(233, 20, 109);
+}
+
+.btn {
+  font-size: 1.4rem;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  animation: movedown 1s linear 1;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes movedown {
+  0% {
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.main {
+  background: url(Assets/images/white\ bg.png);
+  background-size: cover;
+  width: 100;
+  height: 95vh;
+}
+
+.col-lg-6:hover.abiodun {
+  left: 45%;
+  position: fixed;
+}
+
+.main h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 20px;
+  align-self: center;
+}
+
+.main h3 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.main h6 {
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 1;
+  border-bottom: 3px solid rgb(233, 20, 109);
+  width: 40%;
+  margin-bottom: 10%;
+  text-align: center;
+  animation: moveup 1s linear 1;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveup {
+  0% {
+    transform: translateX(-100px);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* .main .bt1 {
+  height: 55px;
+  width: 138px;
+  background-color: rgb(233, 20, 109);
+  color: white;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.main .bt1:hover {
+  background: none;
+  border: 1px solid rgb(233, 20, 109);
+  color: black;
+  transition: 0.5s;
+} */
+
+.main .download {
+  background-color: rgb(233, 20, 109);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10%;
+}
+
+.main .Galary {
+  background-color: rgb(233, 20, 109);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 20%;
+}
+
+.service {
+  text-align: center;
+}
+
+.span {
+  color: rgb(233, 20, 109);
+}
+
+#About {
+  padding: 100%, 0%;
+  color: rgb(233, 20, 109);
+  margin-top: 40px;
+  background-color: floralwhite;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+.about-col-1 img {
+  width: 100%;
+  border-radius: 5%;
+  align-items: center;
+  margin-top: 27%;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+.sub-title {
+  font-size: 40;
+  font-weight: 60%;
+  color: black;
+}
+
+.about-col-2 {
+  flex-basis: 60%;
+  color: black;
+  text-align: justify;
+}
+
+#services {
+  padding: 30px 0;
+  background: url(Assets/images/phone.png);
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  background-size: cover;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+}
+
+.service-list div {
+  background: white;
+  padding: 20px;
+  font-size: 13px;
+  text-align: justify;
+  font-weight: 300;
+  border-right: 10px;
+  margin-bottom: 100px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.service-list div:hover {
+  background: white;
+  cursor: pointer;
+  border-color: crimson;
+  transform: translateY(-10px);
+}
+
+.service-list p {
+  font-weight: 500;
+  font-size: 900;
+}
+
+.service-list i {
+  text-align: center;
+}
+
+.service-list h5 {
+  text-align: center;
+}
+
+.service-list a {
+  background-color: rgb(233, 20, 109);
+  color: white;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  border-color: white;
+  margin-bottom: 5%;
+}
+
+text.show.more .moretext {
+  display: inline;
+}
+
+.swiper {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: white;
+  background-color: white;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: white;
+}
+
+.form-container {
+  background: url(/Assets/images/IT.png) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+}
+
+.form-container::after {
+  position: absolute;
+  z-index: -8;
+}
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0.1rem;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  box-shadow: 4px 3px 4px white;
+}
+
+.wrapper h2 {
+  font-size: 3rem;
+  color: white;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.wrapper h2::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  top: 100px;
+  left: 20px;
+  width: 14%;
+  background: crimson;
+}
+
+.form-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+}
+
+.form-section ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-detail .icons {
+  background: crimson;
+  width: 50px;
+  height: 50px;
+  margin: 1rem;
+  border-radius: 50%;
+}
+
+.form-detail li {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  margin: 0.8px, 0;
+}
+
+.form-detail li i {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+
+.form-detail strong {
+  color: aqua;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group .form-control {
+  width: 100%;
+  outline: none;
+  border: 1px solid white;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  resize: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group span {
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+  padding: 1rem;
+  pointer-events: none;
+  font-size: 0.8rem;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.form-group .form-control:valid ~ span,
+.form-group .form-control:focus ~ span {
+  background: crimson;
+  color: white;
+  transform: translateX(10px) translateY(-10px);
+  font-size: 0.8rem;
+  padding: 0 10px;
+}
+
+.input-field button {
+  outline: none;
+  border: none;
+  background: crimson;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+@media (max-width: 750px) {
+  .form-section {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper h2 {
+    font-size: 2rem;
+  }
+
+  .wrapper h2::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    top: 90px;
+  }
+
+  .form-detail li {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }
+}
+
+.Skills h2 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: black;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.Progress-bar {
+  background: #959595;
+  width: 700px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.Progress-bar div {
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+}
+
+.Progress-bar div span {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: black;
+  float: right;
+  margin-top: -4%;
+  margin-right: -9px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.html {
+  background: #e91e63;
+  animation: html 1s linear forwards;
+}
+
+.css {
+  background: yellow;
+  animation: css 1s linear forwards;
+}
+
+.javascript {
+  background: green;
+  animation: javascript 1s linear forwards;
+}
+
+.reactjavascript {
+  background: blue;
+  animation: reactjavascript 1s linear forwards;
+}
+
+.graphics {
+  background: chartreuse;
+  animation: graphics 1s linear forwards;
+}
+
+.app {
+  background: indigo;
+  animation: app 1s linear forwards;
+}
+
+.github {
+  background: chocolate;
+  animation: github 1s linear forwards;
+}
+
+@keyframes html {
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes css {
+  100% {
+    width: 60%;
+  }
+}
+@keyframes javascript {
+  100% {
+    width: 55%;
+  }
+}
+@keyframes reactjavascript {
+  100% {
+    width: 40%;
+  }
+}
+@keyframes graphics {
+  100% {
+    width: 65%;
+  }
+}
+@keyframes app {
+  100% {
+    width: 50%;
+  }
+}
+@keyframes github {
+  100% {
+    width: 45%;
+  }
+}
