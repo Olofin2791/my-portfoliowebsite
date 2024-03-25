@@ -5,12 +5,11 @@
 }
 
 .navbar {
-  background-color: white;
+  /* background-color: white; */
   /* max-width: 100%; */
 }
 
-.nav-link {
-  color: rgb(233, 20, 109);
+.link {
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
@@ -18,6 +17,8 @@
   animation: movedown 1s linear 1;
   animation-delay: 1s;
   animation-fill-mode: forwards;
+  color: rgb(233, 20, 109);
+  /* background-color: #e91e63; */
 }
 
 @keyframes movedown {
@@ -30,7 +31,7 @@
   }
 }
 
-.nav-link :hover {
+.link :hover {
   color: white;
   background-color: rgb(233, 20, 109);
 }
@@ -39,7 +40,7 @@
   font-size: 1.4rem;
   color: black;
   cursor: pointer;
-  display: none;
+  /* display: none; */
 }
 
 .navbar-brand {
@@ -67,85 +68,90 @@
   background: url(Assets/images/white\ bg.png);
   background-size: cover;
   width: 100;
-  height: 95vh;
+  height: 90vh;
 }
 
-.col-lg-6:hover.abiodun {
-  left: 45%;
-  position: fixed;
+.contentarea {
+  margin-left: 20%;
+  margin-top: 15%;
 }
 
-.main h1 {
-  font-size: 2rem;
+.contentarea h1 {
+  color: #e91e63;
+  font-size: 35px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 900%;
+}
+
+.contentarea h3 {
+  color: #e91e63;
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 900%;
+}
+
+.contentarea a {
+  background-color: rgb(233, 20, 109);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 30px 0;
+  opacity: 0;
+}
+
+.contentarea a :hover {
+  background: black;
+  transition: 1s;
+}
+
+.contentarea h6 {
+  line-height: 2;
+  font-size: 20px;
   font-weight: 700;
-  margin-top: 20px;
-  align-self: center;
-}
-
-.main h3 {
-  font-size: 5rem;
-  font-weight: 700;
-}
-
-.main h6 {
-  font-size: 15px;
+  color: #e91e63;
   text-transform: uppercase;
-  line-height: 1;
-  border-bottom: 3px solid rgb(233, 20, 109);
-  width: 40%;
-  margin-bottom: 10%;
-  text-align: center;
+  margin-bottom: 3%;
+  margin-top: 30%, 30;
   animation: moveup 1s linear 1;
-  animation-delay: 4s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 
-@keyframes moveup {
+.slider {
+  animation: animate 1s linear forwards;
+}
+
+@keyframes animate {
   0% {
-    transform: translateX(-100px);
-    visibility: visible;
+    transform: translateX(100px);
+    opacity: 0;
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
 
-/* .main .bt1 {
-  height: 55px;
-  width: 138px;
-  background-color: rgb(233, 20, 109);
-  color: white;
-  outline: none;
-  border: none;
-  font-weight: bold;
-  border-radius: 5px;
+.images {
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+  width: 50%;
+  height: 80%;
 }
 
-.main .bt1:hover {
-  background: none;
-  border: 1px solid rgb(233, 20, 109);
-  color: black;
-  transition: 0.5s;
-} */
-
-.main .download {
-  background-color: rgb(233, 20, 109);
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 10%;
-}
-
-.main .Galary {
-  background-color: rgb(233, 20, 109);
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-bottom: 20%;
+.images .img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
 }
 
 .service {
@@ -178,12 +184,48 @@
   align-items: center;
   margin-top: 27%;
   box-shadow: 5px 5px 5px rgb(0, 0, 0);
+  animation: moveleft 1s linear 1;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.about-col-1 img {
+  animation: animate 1s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 .sub-title {
   font-size: 40;
   font-weight: 60%;
   color: black;
+  animation: moveup 1s linear 1;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.sub-title {
+  animation: animate 1s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 .about-col-2 {

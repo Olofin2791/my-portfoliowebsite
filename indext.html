@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rev Olofin</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,107 +16,76 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Olofin Abiodun</title>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script
       src="https://kit.fontawesome.com/c3a52354db.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="responsive.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
+
   <body>
-    <!-- Nav bar Section -->
     <nav class="navbar navbar-expand-lg text-uppercase">
       <div class="container">
-        <div class="row">
-          <a class="navbar-brand font-weight-bold col-1" href="#">Logo</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNavAltMarkup"
-          >
-            <div class="navbar-nav , -auto col-2">
-              <a
-                class="nav-link active px-lg-4"
-                href="index.html"
-                target="_blank"
-                >Home</a
-              >
-              <a class="nav-link px-lg-4" href="about.html" target="_blank"
-                >About</a
-              >
-              <a
-                class="nav-link px-lg-4"
-                href="my services.html"
-                target="_blank"
-                >Services</a
-              >
-              <a class="nav-link px-lg-4" href="">Blog</a>
-              <a class="nav-link px-lg-4" href="contact.html" target="_blank"
-                >Contact</a
-              >
-            </div>
+        <a class="navbar-brand font-weight-bold col-2" href="#">REVD OLOFIN</a>
+
+        <button
+          class="navbar-toggler navbar-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link link active px-lg-4" href="#main">Home</a>
+            <a class="nav-link link px-lg-4" href="about.html">About</a>
+            <a class="nav-link link px-lg-4" href="my services.html"
+              >Services</a
+            >
+            <a class="nav-link link px-lg-4" href="contact.html">Contact</a>
           </div>
         </div>
       </div>
     </nav>
-
-    <!-- Home -->
-    <section class="main">
-      <div class="container">
-        <div class="row mx-md-n5 align-items-center">
-          <div class="col-lg-6 md-5">
-            <h1>Hello, My name is</h1>
-            <h1>
-              ABIODUN, I'M <span class="element" style="color: crimson"></span>
-            </h1>
-            <h6>A FRONTEND WEB-DEVELOPER</h6>
-            <a class="Galary" href="my works.html">MY GALARY</a>
-            <a
-              class="download"
-              href="Assets/Files/Olofin CV.pdf"
-              download="Abiodun CV"
-              >MY CV</a
-            >
-          </div>
-
-          <div class="col-lg-6">
-            <img
-              src="Assets/images/Olofin nbg.png"
-              alt="image"
-              class="abiodun"
-              style="width: 600px; margin-left: 50px"
-            />
-          </div>
-        </div>
+    <div class="main" id="main">
+      <div class="contentarea">
+        <h1 class="slider">HELLO, I'M ABIODUN,</h1>
+        <h3 class="slider">
+          I'M <span class="element" style="color: blue"></span>
+        </h3>
+        <h6 class="slider">A FRONT END WEB DEVELOPER</h6>
+        <a href="Assets/Files/Olofin CV.pdf" class="slider"> MY CV</a>
+        <a href="my works.html" class="slider"> GALARY</a>
       </div>
-    </section>
-    <!-- 
-    About
+
+      <div class="images">
+        <img src="Assets/images/Olofin nbg.png" alt="No" class="slider" />
+      </div>
+    </div>
+
+    <!-- About
     <div id="About">
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="Assets/images/me.jpg" />
+            <img src="Assets/images/my background.png" />
           </div>
 
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
-            <p>
+            <p class="sub-title">
               Combining my passion for spreading love, compassion and faith with
               the power of technology. I am a unique blend of a devoted priest
               of the Church of Nigeria- (Anglican Communion) in the Diocese of
@@ -129,9 +101,9 @@
               empower individual on their journey of faith and digital
               exploration.
             </p>
-<!-- 
-            Accordion
-            <div class="accordion p-1" id="accordion">
+
+            <!-- Accordion -->
+    <!-- <div class="accordion p-1" id="accordion">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
                   <button
@@ -146,8 +118,8 @@
                       color: white;
                       font-weight: 800;
                     "
-                  >
-                    SKILLS
+                  > -->
+    <!-- SKILLS
                   </button>
                 </h2>
                 <div
@@ -157,16 +129,41 @@
                   data-bs-parent="#accordionFlushExample"
                 >
                   <div class="accordion-body">
-                    <ul>
-                      <li>PROFICIENCY IN HTML & CSS</li>
-                      <li>JAVASCRIPT</li>
-                      <li>RESPONSIVE DESIGN</li>
-                      <li>GRAPHICS DESIGN</li>
-                      <li>CSS FRAMEWORK (E.G. BOOTSTRAPS)</li>
-                      <li>WEB PERFOMANCE OPTIMAZATION</li>
-                      <li>WEB APP DEVELOPMENT</li>
-                      <li>COLABORATION TOOLS (GIT & GITHUB)</li>
-                    </ul>
+                    <div class="Skills">
+                      <h2>HTML & CSS PROFICIENCY</h2>
+                      <div class="Progress-bar">
+                        <div class="html"><span>70%</span></div>
+                      </div>
+
+                      <h2>BOOTSTRAPS</h2>
+                      <div class="Progress-bar">
+                        <div class="css"><span>60%</span></div>
+                      </div>
+
+                      <h2>JAVASCRIPT</h2>
+                      <div class="Progress-bar">
+                        <div class="javascript"><span>55%</span></div>
+                      </div>
+                      <h2>REACT JAVASCRIPT</h2>
+                      <div class="Progress-bar">
+                        <div class="reactjavascript"><span>40%</span></div>
+                      </div>
+
+                      <h2>GRAPHICS DESIGN</h2>
+                      <div class="Progress-bar">
+                        <div class="graphics"><span>65%</span></div>
+                      </div>
+
+                      <h2>WEB APP DEVELOPMENT</h2>
+                      <div class="Progress-bar">
+                        <div class="app"><span>50%</span></div>
+                      </div>
+
+                      <h2>COLABORATIVE TOOLS</h2>
+                      <div class="Progress-bar">
+                        <div class="github"><span>45%</span></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -272,25 +269,26 @@
         </div>
       </div>
     </div> -->
+    -->
 
     <!-- Services
     <div id="services">
       <div class="container">
-        <h1 class="sub-title" style="text-align: center; color: crimson">
+        <h1 class="sub-title" style="text-align: center; color: white">
           My Services
         </h1>
         <div class="service-list">
           <div>
             <i class="fa-solid fa-code"></i>
             <h5 class="card-title">WEB DESIGN</h5>
-            <p>
+            <p class="text">
               Our web design services cater to bussiness and individals seeking
               an impactful online presence. Our team of skilled designers
               combines creativity with technical expertise to craft visually
               stunning and user- friendly websites tailored to your unique brand
-              identity and goal.
+              identity and goal.Our Services Include:
             </p>
-            <a href="#" class="btn btn-danger">Click here for more</a>
+            <a href="cliick"> CLICK HERE FOR MORE</a>
           </div>
 
           <div>
@@ -304,7 +302,7 @@
               only look great but also provide seamless and satisfying
               interaction
             </p>
-            <a href="#" class="btn btn-danger">Click here for more</a>
+            <a href="click"> CLICK HERE FOR MORE</a>
           </div>
 
           <div>
@@ -318,82 +316,113 @@
               deliver innovative solutions that meet their unique needs and
               exceed their expectation
             </p>
-            <a href="#" class="btn btn-danger">Click here for more</a>
+            <a href="click"> CLICK HERE FOR MORE</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  src="Assets/images/CORE.jpeg"
+                  alt="Why"
+                  style="height: 100%; width: 100%"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <img
+                  src="Assets/images/chart.png"
+                  alt=""
+                  style="width: 100%; height: 100%"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div> -->
 
-    <!-- <div
-      id="carouselExampleCaption"
-      class="carousel slide"
-      data-bride="carousel"
-    >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="/Assets/images/mobile app.jpeg"
-            class="d-block w-30"
-            alt="..."
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+    <!-- Contact Session
+    <div class="form-container">
+      <div class="wrapper">
+        <h2>Contact Me</h2>
+        <div class="form-section">
+          <div class="form-detail">
+            <ul>
+              <li>
+                <div class="icons">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <strong>Location:</strong>
+                  <p>No 8 Feyisayo Garuba Alagbole, Ogun State, Nigeria</p>
+                </div>
+              </li>
+              <li>
+                <div class="icons">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <strong>Email:</strong>
+                  <p>olofinabiodun42@gmail.com</p>
+                </div>
+              </li>
+              <li>
+                <div class="icons">
+                  <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div>
+                  <strong>Phone Number:</strong>
+                  <p>+2348162292738</p>
+                </div>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="carousel-item">
-          <img src="/Assets/images/OIP.jpeg" class="d-block w-50" alt="..." />
-          <div class="carousel-caption d-none d-md-none">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="/Assets/images/images (42).jpeg"
-            class="d-block w-30"
-            alt="..."
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="/Assets/images/" class="d-block w-30" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+
+          <div class="input-field">
+            <form onsubmit="sendEmail(); reset(); return false;">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  required="required"
+                  class="form-control"
+                  placeholder="Name"
+                  autocomplete="off"
+                />
+                <span class="form-label">Name</span>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" "required" class="form-control"
+                placeholder="email" autocomplete="off" />
+                <span class="form-label"> Email</span>
+              </div>
+              <div class="form-group">
+                <textarea
+                  name=""
+                  id=" Submit"
+                  cols="30"
+                  rows="10"
+                  class="form-control"
+                  required="required"
+                  placeholder="Type Your Message Here"
+                  autocomplete="off"
+                ></textarea>
+                <span class="form-label" id="write"> Write</span>
+              </div>
+              <button type="submit">SUBMIT</button>
+            </form>
           </div>
         </div>
       </div>
     </div> -->
-    -->
 
     <script>
-      let typed = new Typed(".element", {
+      var typed = new Typed(".element", {
         strings: [
           "A PRIEST,",
           "A WEB DEVELOPER",
@@ -418,19 +447,9 @@
           disableOnInteraction: false,
         },
         loop: true,
-
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
       });
     </script>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
