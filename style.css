@@ -624,14 +624,14 @@ text.show.more .moretext {
 
   .service-list div i {
     font-size: 25px;
-    margin-left: 10rem;
+    margin-left: 8rem;
   }
   .service-list .card-title {
     font-size: 25px;
   }
 
   .service-list div .text {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .service-list div {
