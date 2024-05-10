@@ -84,14 +84,19 @@
 .slider {
   opacity: 1; /* Make sure content is visible */
   transition: opacity 1s ease-in-out;
+  color: black;
 }
 
 .contentarea h1,
 .contentarea h3,
 .contentarea h6 {
-  color: #e91e63;
+  color: black;
   margin: 0.5em auto;
   margin-right: 0em;
+}
+
+.contentarea h3 {
+  color: #e91e63;
 }
 
 .contentarea h1 {
@@ -619,13 +624,14 @@ text.show.more .moretext {
 
   .service-list div i {
     font-size: 25px;
+    margin-left: 10rem;
   }
   .service-list .card-title {
     font-size: 25px;
   }
 
   .service-list div .text {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .service-list div {
@@ -957,6 +963,11 @@ text.show.more .moretext {
   background-color: white;
   margin: 6px;
   border-radius: 50%;
+}
+
+.socialIcon i {
+  text-decoration: none;
+  color: #e91e63;
 }
 
 .socialIcon a :hover {
