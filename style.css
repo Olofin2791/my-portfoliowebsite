@@ -127,7 +127,7 @@
   cursor: pointer;
   margin: 1em 0;
   display: inline-block;
-  margin-right: 15px;
+  margin: 0.5rem;
 }
 
 .contentarea a {
@@ -170,6 +170,10 @@
     font-size: large;
     font-weight: 900;
     margin-right: 2em;
+  }
+  .contentarea a {
+    margin-right: 2rem;
+    margin: 0.5rem;
   }
 }
 
@@ -232,6 +236,7 @@
   right: 80px;
   width: 50%;
   height: 80%;
+  margin-right: -5rem;
 }
 
 /* .images .img {
