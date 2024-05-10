@@ -97,6 +97,7 @@
 .contentarea h1 {
   font-size: 2.2em;
   font-weight: bold;
+  margin-right: 17px;
 }
 
 .contentarea h3 {
@@ -108,6 +109,7 @@
   font-size: 1.4em;
   font-weight: bold;
   margin-right: 5em;
+  position: relative;
 }
 
 .contentarea a {
@@ -120,6 +122,7 @@
   cursor: pointer;
   margin: 1em 0;
   display: inline-block;
+  margin-right: 15px;
 }
 
 .contentarea a {
@@ -155,10 +158,13 @@
   .images img {
     display: none;
   }
+  .contentarea h1 {
+    font-size: larger;
+  }
   .contentarea h6 {
     font-size: large;
     font-weight: 900;
-    margin-right: 3em;
+    margin-right: 2em;
   }
 }
 
@@ -255,6 +261,10 @@
   .contentarea2 {
     flex: 1; /* Assign equal width to both the image and text container */
   }
+
+  .journey .frontend {
+    height: 50%;
+  }
 }
 
 @media only screen and (max-width: 928px) {
@@ -263,6 +273,7 @@
     /* width: 150%; */
     /* margin-left: 20%; */
   }
+
   /* .contentarea {
     margin-top: 80%;
   }
@@ -305,6 +316,10 @@
   p .greetings {
     font-size: 150%;
   }
+
+  .journey h1 {
+    font-size: large;
+  }
 }
 
 .service {
@@ -338,7 +353,7 @@
   color: #e91e63;
   font-size: 35px;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 1000%;
+  font-weight: 100%;
 }
 
 .contentarea2 p {
@@ -376,7 +391,11 @@
 }
 
 .about-col-1 {
-  flex-basis: 35%;
+  flex-basis: 60%;
+}
+
+.about-col-2 {
+  margin-left: 37%;
 }
 .container .about-col-1 img {
   height: 300px;
@@ -394,6 +413,23 @@
 .about-col-1 img {
   animation: animate 1s linear forwards;
 }
+
+.about-col-2 {
+  flex-basis: 60%;
+  color: black;
+  text-align: justify;
+}
+
+.box {
+  padding: 0px 30px;
+  border-left: 2px solid crimson;
+  position: relative;
+  background-color: aliceblue;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin: 1rem;
+}
+
 @media only screen and (max-width: 786px) {
   .container .about-col-1 img {
     position: absolute;
@@ -411,13 +447,9 @@
   }
   .container .Progress-bar span {
     display: none;
-
-    .accordion-body {
-      /* padding: 10px; */
-    }
-    .box {
-      height: 50%;
-    }
+  }
+  .about-col-2 {
+    margin-left: 0.5%;
   }
 }
 
@@ -454,12 +486,6 @@
     transform: translateX(0px);
     opacity: 1;
   }
-}
-
-.about-col-2 {
-  flex-basis: 60%;
-  color: black;
-  text-align: justify;
 }
 
 #services {
@@ -521,36 +547,116 @@
   margin-bottom: 5%;
 }
 
+.values {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+
 text.show.more .moretext {
   display: inline;
 }
 
 .swiper {
-  width: 70%;
-  height: 50%;
+  width: 100%;
+  height: fit-content;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 50px;
+  margin-top: -10rem;
 }
 
 .swiper-slide img {
   width: 100%;
+  align-items: center;
 }
 
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
-  color: white;
-  background-color: white;
+  color: antiquewhite;
 }
 
 .swiper .swiper-pagination-bullet-active {
   background: white;
 }
 
+.card-container {
+  /* background: #34495e; */
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.inner {
+  /* background: #5d5d7e; */
+
+  width: 50%;
+  padding: 6rem 2.5rem;
+}
+
+.card-container h6 {
+  font-size: 25px;
+  font-weight: 900;
+  color: #e91e63;
+}
+
 @media only screen and (max-width: 786px) {
   .service-list {
-    margin-top: 20%;
+    margin-bottom: 5%;
+    display: block;
+  }
+
+  .card-container h6 {
+    text-align: center;
+  }
+
+  .service-list div {
+    margin-bottom: 5%;
+    height: 50%;
+  }
+
+  .service-list div i {
+    font-size: 25px;
+  }
+  .service-list .card-title {
+    font-size: 25px;
+  }
+
+  .service-list div .text {
+    font-size: 20px;
+  }
+
+  .service-list div {
+    animation: animate 3s linear forwards;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+
+  .service-list div i {
+    text-align: center;
+  }
+  .service-list .text {
+    font-size: large;
+  }
+  .card-container {
+    display: block;
+  }
+  .swiper {
+    width: 250%;
+    align-items: center;
+    margin-top: -6rem;
+    margin-right: 10rem;
+    margin-bottom: -10rem;
   }
 }
 
@@ -784,7 +890,7 @@ text.show.more .moretext {
 
 @keyframes html {
   100% {
-    width: 70%;
+    width: 90%;
   }
 }
 
@@ -795,37 +901,28 @@ text.show.more .moretext {
 }
 @keyframes javascript {
   100% {
-    width: 55%;
+    width: 70%;
   }
 }
 @keyframes reactjavascript {
   100% {
-    width: 40%;
+    width: 65%;
   }
 }
 @keyframes graphics {
   100% {
-    width: 65%;
+    width: 80%;
   }
 }
 @keyframes app {
   100% {
-    width: 50%;
+    width: 60%;
   }
 }
 @keyframes github {
   100% {
-    width: 45%;
+    width: 60%;
   }
-}
-
-.box {
-  padding: 0px 30px;
-  border-left: 2px solid crimson;
-  position: relative;
-  background-color: aliceblue;
-  cursor: pointer;
-  transition: all 0.4s;
 }
 
 #gallary {
@@ -883,45 +980,4 @@ text.show.more .moretext {
   height: 120%;
   object-fit: cover;
   filter: brightness(0.6);
-}
-
-.card-container {
-  background: #34495e;
-  margin-top: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 70vh;
-}
-
-.inner {
-  background: #5d5d7e;
-  display: flex;
-  width: 80%;
-  padding: 6rem 2.5rem;
-}
-.card-container img {
-  display: block;
-  width: 80%;
-  object-fit: cover;
-}
-
-.card-container .card content {
-  display: flex;
-}
-
-.cards {
-  width: 100%;
-  position: relative;
-}
-
-.cards .title {
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-size: small;
-  background: none;
-  border: 0;
-  padding: 0.4rem;
 }
