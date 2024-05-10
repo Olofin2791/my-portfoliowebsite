@@ -168,7 +168,6 @@
   }
 }
 
-
 .emoji {
   font-size: 50px;
   animation-name: waving-hand;
@@ -256,6 +255,7 @@
 @media (min-width: 768px) {
   .journey {
     flex-direction: row; /* side by side on larger screens */
+    display: none;
   }
 
   .frontend,
