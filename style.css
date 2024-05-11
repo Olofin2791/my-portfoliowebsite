@@ -113,7 +113,7 @@
 .contentarea h6 {
   font-size: 1.4em;
   font-weight: bold;
-  margin-right: 5em;
+  margin-left: 0.5rem;
   position: relative;
 }
 
@@ -147,6 +147,7 @@
 .images img {
   max-width: 100%;
   height: auto;
+  margin: 2rem;
 }
 
 /* Media query for tablet and desktop sizes */
@@ -217,8 +218,14 @@
 
 .slider {
   animation: animate 1s linear forwards;
+  margin-left: 8rem;
 }
 
+.slider span {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 @keyframes animate {
   0% {
     transform: translateX(100px);
@@ -759,6 +766,7 @@ text.show.more .moretext {
 
 .form-group {
   position: relative;
+  padding: 2rem;
 }
 
 .form-group .form-control {
@@ -777,7 +785,7 @@ text.show.more .moretext {
   top: 0.8rem;
   left: 0;
   padding: 1rem;
-  pointer-events: none;
+  pointer-events: fill;
   font-size: 0.8rem;
   color: white;
   text-transform: uppercase;
@@ -804,6 +812,10 @@ text.show.more .moretext {
   margin: 1rem 0;
   cursor: pointer;
   transition: 0.4s;
+}
+
+.form-label {
+  margin-left: 5rem;
 }
 
 @media (max-width: 500px) {
@@ -913,27 +925,27 @@ text.show.more .moretext {
 }
 @keyframes javascript {
   100% {
-    width: 70%;
+    width: 80%;
   }
 }
 @keyframes reactjavascript {
   100% {
-    width: 65%;
+    width: 70%;
   }
 }
 @keyframes graphics {
   100% {
-    width: 80%;
+    width: 70%;
   }
 }
 @keyframes app {
   100% {
-    width: 60%;
+    width: 50%;
   }
 }
 @keyframes github {
   100% {
-    width: 60%;
+    width: 80%;
   }
 }
 
@@ -997,4 +1009,71 @@ text.show.more .moretext {
   height: 120%;
   object-fit: cover;
   filter: brightness(0.6);
+}
+
+.session2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.session2text p {
+  width: 60%;
+  text-align: center;
+  margin-left: 25%;
+}
+.session2text h1 {
+  text-align: center;
+  margin-top: 3rem;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+}
+
+.colaborate h3 {
+  color: #e91e63;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  margin-top: 3rem;
+  margin-left: 0.1%;
+}
+
+.colaborate {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20%;
+}
+.colaborate img {
+  width: 20%;
+  margin-left: 10rem;
+  border-radius: 50%;
+}
+
+@media (max-width: 500px) {
+  .session2text {
+    margin-top: 0.5rem;
+  }
+  .session2text p {
+    width: 80%;
+    align-items: center;
+    margin-left: 3rem;
+  }
+  .colaborate img {
+    width: 20%;
+    height: 10%;
+    margin-left: 4rem;
+  }
+
+  .colaborate {
+    display: flex;
+    margin: 0 0.5rem;
+  }
+
+  .colaborate h3 {
+    font-size: 14px;
+    width: 50%;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+  }
 }
